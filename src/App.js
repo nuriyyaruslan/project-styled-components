@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import StyledButton, { FancyButton } from './components/Button/Button';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Learning styled components</h1>
+      <StyledButton>Styled Button</StyledButton>
+      <div>
+        <br />
+      </div>
+      <StyledButton variant='outline'>Styled Button</StyledButton>
+      <div>
+        <br />
+      </div>
+      {/* as="a" */}
+      <FancyButton>Fancy Button</FancyButton>
     </div>
   );
 }
